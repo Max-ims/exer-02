@@ -70,9 +70,22 @@ body {
     margin: 10px 5px;
     background-color: #000000;
     transition: transform 0.3s ease-in-out;
+    overflow: hidden;
 }
 .project:hover{
     transform: scale(1.2);
+}
+#project1{
+    background-image: url(assets/crystal_rush.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+#project2{
+    background-image: url(assets/diet_solver.jpg);
+    background-size: cover;
+    background-position: center;
+
 }
 .flex-skills-bio{
     display: flex;
