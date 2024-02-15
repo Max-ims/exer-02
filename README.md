@@ -1,6 +1,5 @@
 # exer-02
 
-# My Portfolio README
 
 ## Full Name
 Maximus Aurellus J. Bicalan
