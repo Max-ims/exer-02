@@ -1,15 +1,131 @@
-.flex-container {
-    display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: red;
-    flex-direction: column;
-    flex-wrap: wrap;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.flex-item {
-    border-style: solid;
-    border-width: 2px;
-    border-color: red;
-    flex-direction: row-reverse;
+.main-container{
+    background-image:  url(assets/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.title-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: uppercase;
+    background-color: #48b78c;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+}
+.logo {
+    text-align: center;
+}
+.featured-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 20px 0;
+}
+.featured-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+.previous-projects {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+}
+.featured-image{
+    transition: transform 0.5s ease-in-out;
+}
+.featured-image:hover{
+    transform: scale(1.1);
+}
+.project{
+    height: 200px;
+    width:  300px;
+    margin: 10px 5px;
+    background-color: #000000;
+    transition: transform 0.3s ease-in-out;
+}
+.project:hover{
+    transform: scale(1.2);
+}
+.flex-skills-bio{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    margin: 10px 10px;
+}
+
+.bio{
+    width: 300px;
+    margin: 10px 5px;
+    color: white;
+
+}
+.skills{
+    width: 300px;
+    margin: 10px 5px;
+    color: white;
+
+}
+.horizontal-line {
+    width: 100%;
+    height: 2px; /* Adjust the height as needed */
+    background-color: #9edaff; /* Change the color to your preference */
+    margin: 10px 0; /* Adjust the margin as needed */
+  }
+.footer-contents {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #29302c;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.8;
+}
+.contact-info{
+    margin: 10px 10px;
+    opacity: 1;
+}
+.title-below {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: uppercase;
+    opacity: 1;
 }
