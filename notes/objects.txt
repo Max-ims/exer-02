@@ -1,0 +1,70 @@
+OBJECTS 
+
+let usr = new Object();
+let usr = {};
+
+usr = {
+
+    id : 1,
+    name : 'John'
+
+    printId : function(){
+        alert(this.id)
+    }
+}
+
+-------------
+Symbol()
+
+let id = Symbol("id");
+
+Symbol.for() // returns a symbol by name 
+Symbol.keyFor // returns a name by global symbol
+Symbol.hasInstance
+Symbol.isConcatSpreadable
+Symbol.iterator
+Symbol.toPrimitive
+
+---------------
+"this" pointer
+
+usr = {
+
+    id : 1,
+    name : 'John'
+
+    printId : function(){
+        alert(this.id)
+    }
+}
+
+----------------
+OBJECT TO PRIMITIVE CONVERSION
+
+//using obj as property key and is an obj to sring conversion 
+anotherObj[obj] = 123 // nested objects 
+
+//obj to num conversion 
+
+let num = Number(obj);
+// maths (except binary plus)
+let n = +obj; // unary plus
+let delta = date1 - date2;
+// less/greater comparison
+let greater = user1 > user2;
+
+
+Symbol.toPrimitive
+toString()
+valueOf()
+
+---------------
+new operator constructor 
+
+function User(name) {
+this.name = name;
+this.isAdmin = false;
+}
+let user = new User("Jack");
+alert(user.name); // Jack
+alert(user.isAdmin); // fals

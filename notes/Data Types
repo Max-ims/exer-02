@@ -1,0 +1,152 @@
+-----------------------
+Numbers
+
+Math.floor()
+Math.ceil()
+Math.round()
+Math.random()
+Math.max()
+Math.min()
+Math.pow()
+Math.sqrt()
+Math.abs()
+----------------------- 
+Strings 
+String.length
+String.indexOf()
+String.lastIndexOf()
+String.search()
+String.slice()
+String.substring()
+String.substr()
+String.replace()
+String.toUpperCase()
+String.toLowerCase()
+-----------------------
+Special characters 
+\n
+\t
+\b
+-----------------------
+Arrays 
+initialization
+let arr = new Array();
+let arr = [];
+Array.isArray()
+Array.length
+Array.push()
+Array.pop()
+Array.shift()
+Array.unshift()
+Array.splice()
+Array.slice()
+Array.concat()
+Array.join()
+Array.sort()
+Array.reverse()
+Array.indexOf()
+Array.lastIndexOf()
+Array.includes()
+Array.find()
+Array.findIndex()
+Array.filter()
+Array.map()
+Array.reduce()
+Array.reduceRight()
+
+-----------------------
+iTERABLES
+for...of
+Symbol.iterator
+for...in
+
+-----------------------
+MAP 
+new Map([iterable]);
+Map.set()
+Map.get()
+Map.has()
+Map.delete()
+Map.clear()
+Map.size
+Map.keys()
+Map.values()
+Map.entries()
+Map.forEach()
+-----------------------
+Set
+new Set();
+Set.add()
+Set.has()
+Set.delete()    
+Set.clear()
+Set.size
+Set.keys()
+Set.values()
+Set.entries()
+Set.forEach()
+-----------------------
+WeakMap
+new WeakMap([iterable]);
+does not support iteration and methods keys(), values(), entries()
+WeakSet 
+-----------------------
+Array Destructuring
+let arr = ['I', 'go', 'home'];
+let [firstName, , title] = arr; //ignore elements using commas
+the rest ... 
+let [name1, ...rest] = ["Julius", "Caesar", "Consul", "of the Roman Republic"];
+
+-----------------------
+let title, width, height;
+// okay now
+({title, width, height}) = {title: "Menu", width: 200, height: 100};
+-----------------------
+NESTED DESTRUCTURING 
+let options = {
+    size: {
+    width: 100,
+    height: 200
+    },
+    items: ["Cake", "Donut"],
+    extra: true // something extra that we will not destruct
+};
+
+// destructuring assignment split in multiple lines for clarity
+let {
+    size: { // put size here
+    width,
+    height
+},
+items: [item1, item2], // assign items here
+title = "Menu" // not present in the object (default value is used)
+} = options;
+
+alert(title); // Menu
+alert(width); // 100
+alert(height); // 200
+alert(item1); // Cake
+alert(item2); // Donut
+
+-----------------------
+DESTRUCTURING FUNCTION PARAMETERS
+// we pass object to function
+let options = {
+    title: "My menu",
+    items: ["Item1", "Item2"]
+    };
+    // ...and it immediately expands it to variables
+function showMenu({title = "Untitled", width = 200, height = 100, items = []}) {
+    // title, items – taken from options,
+    // width, height – defaults used
+    alert( `${title} ${width} ${height}` ); // My Menu 200 100
+    alert( items ); // Item1, Item2
+}
+showMenu(options);
+
+
+-----------------------
+JSON methods 
+JSON.stringify() // convert obj to json
+JSON.parse() //convert json back into object
+-----------------------

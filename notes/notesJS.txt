@@ -1,0 +1,84 @@
+
+let - block scope, var - function scope
+-------------------
+data types:
+number, bigInt
+string
+boolean - true, false
+null
+undefined ( means value not assigned)
+object - for complex ds
+NaN
+Infinity
+
+-----------
+methods:
+typeof <var or literal value>- returns the type of the variable
+
+
+------------------
+alert()
+prompt(title, [default]) <title> - message to show, [default] - default value
+confirm() - returns true (if OK) or false
+
+-------------
+TYPE CONVERSIONS
+
+string conversion - String()
+numeric conversion - Number()
+Boolean conversion - Boolean()
+-------------
+OPERATORS
+Remainder %
+Exponentiation **
+String concat +
+Numeric conv +
+Assignment chaining - a = b = c = 2
+Inplace modification += *=
+Increment ++, decrement --
+BITWISE operations
+
+--------------
+
+COMPARISONS
+<, >, ==, >= , <=, !=
+applies to string COMPARISONS
+different type COMPARISONS
+STRICT equality check (===)
+
+--------------
+
+CONDITIONALS
+
+if () {}
+multiple () ? : () ? :
+
+---------------
+
+LOGICAL OPERATORS
+||
+&&
+!
+
+-----------------
+NULLISH coalesicing OPERATORS - ??
+
+---------------
+LOOPS
+while () {}
+do{ }while();
+for (){}
+swithcd(){}
+
+-------------
+FUNCTIONS 
+function <funcName>(){}
+
+--------------
+
+ARROW FUNCTIONS 
+let sum = (a,b) => a + b ;
+sum(1,2);
+
+-----------
+JS SPECIALS 
